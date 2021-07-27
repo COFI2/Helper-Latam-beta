@@ -123,9 +123,9 @@ const args = message.content
 		.trim()
 		.split(/ +/g);
 var poke = pokemon[args[1]] // 1 seria areodactyl
-if(!poke) return message.reply("No hay")
+if(!poke) return message.reply("Revisa tu ortografia tal ves escribiste mal el nombre del pokemon o Este tag no ah sido creado")
 var info = poke[args[2]] // 2 seria stats  
-if(!info) return message.reply("No hay")
+if(!info) return message.reply("Este tag no ah sido creado")
 message.channel.send(info)
 });
 client.login(process.env.aea)
